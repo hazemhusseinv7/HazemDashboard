@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hazem Dashboard">
+    <!-- Normalize CSS File -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Framework CSS File -->
+    <link rel="stylesheet" href="css/framework.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Hazem Dashboard</title>
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-color-one p-20 position-relative">
+            <a href="#"><img src="imgs/logo-pc.png" class="logo-pc" alt="logo"></a>
+            <a href="#"><img src="imgs/logo-mobile.png" class="logo-mobile" alt="logo"></a>
+            <ul>
+                <li>
+                    <a class="active d-flex align-center fs-14 color-white rad p-10" href="index.html">
+                        <i class="fa-solid fa-chart-simple fa-fw"></i>
+                        <span class="fs-14 hide-mobile">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 color-white rad p-10" href="settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span class="fs-14 hide-mobile">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 color-white rad p-10" href="profile.html">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span class="fs-14 hide-mobile">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 color-white rad p-10" href="projects.html">
+                        <i class="fa-solid fa-window-restore fa-fw"></i>
+                        <span class="fs-14 hide-mobile">Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 color-white rad p-10" href="courses.html">
+                        <i class="fa-solid fa-clock fa-fw"></i>
+                        <span class="fs-14 hide-mobile">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 color-white rad p-10" href="friends.html">
+                        <i class="fa-solid fa-user-group fa-fw"></i>
+                        <span class="fs-14 hide-mobile">Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 color-white rad p-10" href="files.html">
+                        <i class="fa-solid fa-file fa-fw"></i>
+                        <span class="fs-14 hide-mobile">Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-14 color-white rad p-10" href="plans.html">
+                        <i class="fa-solid fa-credit-card fa-fw"></i>
+                        <span class="fs-14 hide-mobile">Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-full bg-color-two">
+
+            <!-- Header Start -->
+            <header class="bg-color-one p-15 between-flex">
+                <div class="search position-relative">
+                    <input class="p-10 rad" type="search" placeholder="Type a keyword">
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification position-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                    <a href="https://github.com/hazemhusseinv7"><img class="rad" src="imgs/avatar.png"
+                            alt="Profile Picture"></a>
+                </div>
+            </header>
+            <!-- Header End -->
+
+            <h1 class="position-relative">Dashboard</h1>
+            <div class="wrapper d-grid gap-20">
+                <!-- Welcome Widget Start -->
+                <div class="welcome bg-color-one text-c-mobile block-mobile rad">
+                    <div class="intro p-20 d-flex space-between bg-color-two-alt">
+                        <div>
+                            <h2 class="m-0">Welcome</h2>
+                            <p class="bg-color-two-alt mt-5"></p>
+                        </div>
+                        <img src="imgs/img.png" alt="">
+                    </div>
+                    <a href="https://github.com/hazemhusseinv7"><img class="avatar rad" src="imgs/avatar.png"
+                            alt="Profile Picture"></a>
+                    <div class="body text-c d-flex p-20 mt-20 mb-20 block-mobile">
+                        <div>Hazem Hussein<span class="d-block color-gray fs-14 mt-10">Front-End Developer</span></div>
+                        <div>4<span class="d-block color-gray fs-14 mt-10">Projects</span></div>
+                    </div>
+                    <a href="profile.html"
+                        class="visit d-block fs-14 bg-color-purple color-white w-fit button-shape">Profile</a>
+                </div>
+                <!-- Welcome Widget End -->
+
+                <!-- Quick Draft Widget Start -->
+                <div class="quick-draft p-20  bg-color-one rad">
+                    <h2 class="mt-0 mb-20">Quick Draft</h2>
+                    <p class="mt-0 mb-20 fs-15">Write a draft for your ideas</p>
+                    <form>
+                        <input class="title d-block mb-20 w-full p-10 border-none bg-color-two rad-12" type="text"
+                            placeholder="Title">
+                        <textarea class="d-block mb-20 w-full p-10 border-none bg-color-two rad-12"
+                            placeholder="Your Thoughts"></textarea>
+                        <input class="save d-block fs-14 bg-color-purple color-white w-fit button-shape border-none"
+                            type="submit" value="Save">
+                    </form>
+                </div>
+                <!-- Quick Draft Widget End -->
+
+                <!-- Targets Widget Start -->
+                <div class="targets bg-color-one p-20 rad">
+                    <h2 class="mt-0 mb-20">Targets</h2>
+                    <p class="mt-0 mb-20 fs-15">Targets of the year</p>
+                    <div class="row-one target-row mb-20 d-flex align-center">
+                        <div class="icon center-flex">
+                            <!-- Design Option -->
+                            <!-- <i class="fa-solid fa-coins color-blue"></i> -->
+                            <i class="fa-solid fa-euro-sign fa-lg color-blue"></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 color-gray">Money</span>
+                            <span class="d-block mt-5 mb-10 fw-bold">11,208</span>
+                            <div class="progress position-relative">
+                                <span class="bg-color-blue row-one" style="width: 50%">
+                                    <span class="bg-color-blue">50%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-two target-row mb-20 d-flex align-center">
+                        <div class="icon center-flex">
+                            <i class="fa-solid fa-window-restore fa-lg color-orange"></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 color-gray">Projects</span>
+                            <span class="d-block mt-5 mb-10 fw-bold">4</span>
+                            <div class="progress position-relative">
+                                <span class="bg-color-orange row-two" style="width: 70%">
+                                    <span class="bg-color-orange">70%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-three target-row mb-20 d-flex align-center">
+                        <div class="icon center-flex">
+                            <i class="fa-solid fa-user-group fa-lg color-green"></i>
+                        </div>
+                        <div class="details">
+                            <span class="fs-14 color-gray">Team</span>
+                            <span class="d-block mt-5 mb-10 fw-bold">1</span>
+                            <div class="progress position-relative">
+                                <span class="bg-color-green row-three" style="width: 100%">
+                                    <span class="bg-color-green">100%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Targets Widget End -->
+
+                <!-- Tickets Widget Start -->
+                <div class="tickets p-20 bg-color-one rad">
+                    <h2 class="mt-0 mb-20">Tickets</h2>
+                    <p class="mt-0 mb-20 color-gray fs-15">Tickets Status</p>
+                    <div class="d-flex text-c gap-20 wrap">
+                        <div class="card p-20 rad-12 fs-13 bg-color-two">
+                            <i class="fa-solid fa-ticket fa-2x mb-10 color-orange"></i>
+                            <span class="d-block fw-bold fs-25 mb-5">2500</span>
+                            Total
+                        </div>
+                        <div class="card p-20 rad-12 fs-13 bg-color-two">
+                            <i class="fa-solid fa-spinner fa-2x mb-10 color-blue"></i>
+                            <span class="d-block fw-bold fs-25 mb-5">500</span>
+                            Pending
+                        </div>
+                        <div class="card p-20 rad-12 fs-13 bg-color-two">
+                            <i class="fa-regular fa-circle-check fa-2x mb-10 color-green"></i>
+                            <span class="d-block fw-bold fs-25 mb-5">1900</span>
+                            Closed
+                        </div>
+                        <div class="card p-20 rad-12 fs-13 bg-color-two">
+                            <i class="fa-solid fa-eraser fa-2x mb-10 color-red"></i>
+                            <span class="d-block fw-bold fs-25 mb-5">100</span>
+                            Deleted
+                        </div>
+                    </div>
+                </div>
+                <!-- Tickets Widget End -->
+
+                <!-- Latest News Widget Start -->
+                <div class="news bg-color-one rad text-c-mobile">
+                    <div class="bg-color-two-alt p-20">
+                        <h2 class="m-0">Latest News</h2>
+                    </div>
+                    <div class="content">
+                        <div class="news-row d-flex align-center">
+                            <img src="imgs/news-html.png" alt="" class="html">
+                            <div class="info">
+                                <h3>Added new HTML course</h3>
+                                <p class="m-0 fs-14 color-gray">Lorem ipsum dolor sit.</p>
+                            </div>
+                            <div class="button-shape bg-color-two fs-13 label">3 Days ago</div>
+                        </div>
+                        <div class="news-row d-flex align-center">
+                            <img src="imgs/news-css.png" alt="" class="css">
+                            <div class="info">
+                                <h3>Added new HTML course</h3>
+                                <p class="m-0 fs-14 color-gray">Lorem ipsum dolor sit.</p>
+                            </div>
+                            <div class="button-shape bg-color-two fs-13 label">3 Days ago</div>
+                        </div>
+                        <div class="news-row d-flex align-center">
+                            <img src="imgs/news-js.png" alt="" class="js">
+                            <div class="info">
+                                <h3>Added new HTML course</h3>
+                                <p class="m-0 fs-14 color-gray">Lorem ipsum dolor sit.</p>
+                            </div>
+                            <div class="button-shape bg-color-two fs-13 label">3 Days ago</div>
+                        </div>
+                        <div class="news-row d-flex align-center">
+                            <img src="imgs/news-react.png" alt="" class="react">
+                            <div class="info">
+                                <h3>Added new HTML course</h3>
+                                <p class="m-0 fs-14 color-gray">Lorem ipsum dolor sit.</p>
+                            </div>
+                            <div class="button-shape bg-color-two fs-13 label">3 Days ago</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Latest News Widget End -->
+
+                <!-- Tasks Widget Start -->
+                <div class="tasks p-20  bg-color-one rad">
+                    <h2 class="mt-0 mb-20">Latest Tasks</h2>
+                    <div class="tasks-row between-flex">
+                        <div class="info">
+                            <h3 class="mt-0 mb-5 fs-15">Lorem ipsum</h3>
+                            <p class="m-0 color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                        <i class="fa-solid fa-eraser delete"></i>
+                    </div>
+                    <div class="tasks-row between-flex">
+                        <div class="info">
+                            <h3 class="mt-0 mb-5 fs-15">Lorem ipsum</h3>
+                            <p class="m-0 color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                        <i class="fa-solid fa-eraser delete"></i>
+                    </div>
+                    <div class="tasks-row between-flex">
+                        <div class="info">
+                            <h3 class="mt-0 mb-5 fs-15">Lorem ipsum</h3>
+                            <p class="m-0 color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                        <i class="fa-solid fa-eraser delete"></i>
+                    </div>
+                    <div class="tasks-row between-flex done">
+                        <div class="info">
+                            <h3 class="mt-0 mb-5 fs-15">Lorem ipsum</h3>
+                            <p class="m-0 color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                        <i class="fa-solid fa-eraser delete"></i>
+                    </div>
+                    <div class="tasks-row between-flex">
+                        <div class="info">
+                            <h3 class="mt-0 mb-5 fs-15">Lorem ipsum</h3>
+                            <p class="m-0 color-gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        </div>
+                        <i class="fa-solid fa-eraser delete"></i>
+                    </div>
+                </div>
+                <!-- Tasks Widget End -->
+
+                <!-- Top Searched Items Widget Start -->
+                <div class="searched-items p-20  bg-color-one rad">
+                    <h2 class="mt-0 mb-20">Top Searched Items</h2>
+                    <div class="items-header d-flex space-between color-gray mb-10">
+                        <div>Keyword</div>
+                        <div>Search Count</div>
+                    </div>
+                    <div class="items d-flex space-between pt-15 pb-15">
+                        <span>HTML</span>
+                        <span class="bg-color-two fs-13 button-shape">220</span>
+                    </div>
+                    <div class="items d-flex space-between pt-15 pb-15">
+                        <span>CSS</span>
+                        <span class="bg-color-two fs-13 button-shape">220</span>
+                    </div>
+                    <div class="items d-flex space-between pt-15 pb-15">
+                        <span>JS</span>
+                        <span class="bg-color-two fs-13 button-shape">220</span>
+                    </div>
+                    <div class="items d-flex space-between pt-15 pb-15">
+                        <span>React</span>
+                        <span class="bg-color-two fs-13 button-shape">220</span>
+                    </div>
+                    <div class="items d-flex space-between pt-15 pb-15">
+                        <span>PS</span>
+                        <span class="bg-color-two fs-13 button-shape">220</span>
+                    </div>
+                    <div class="items d-flex space-between pt-15 pb-15">
+                        <span>AI</span>
+                        <span class="bg-color-two fs-13 button-shape">220</span>
+                    </div>
+                </div>
+                <!-- Top Searched Items Widget End -->
+
+                <!-- Latest Uploads Widget Start -->
+                <div class="uploads p-20  bg-color-one rad">
+                    <h2 class="mt-0 mb-20">Latest Uploads</h2>
+                    <ul>
+                        <li class="between-flex pb-10 mb-10">
+                            <div class="d-flex align-center">
+                                <img class="mr-10" src="imgs/file-icon-pdf.png" alt="">
+                                <div>
+                                    <span class="d-block">file.pdf</span>
+                                    <span class="fs-15 color-gray">name</span>
+                                </div>
+                            </div>
+                            <div class="bg-color-two color-gray button-shape fs-13">2mb</div>
+                        </li>
+                        <li class="between-flex pb-10 mb-10">
+                            <div class="d-flex align-center">
+                                <img class="mr-10" src="imgs/file-icon-apk.png" alt="">
+                                <div>
+                                    <span class="d-block">file.apk</span>
+                                    <span class="fs-15 color-gray">name</span>
+                                </div>
+                            </div>
+                            <div class="bg-color-two color-gray button-shape fs-13">2mb</div>
+                        </li>
+                        <li class="between-flex pb-10 mb-10">
+                            <div class="d-flex align-center">
+                                <img class="mr-10" src="imgs/file-icon-iso.png" alt="">
+                                <div>
+                                    <span class="d-block">file.iso</span>
+                                    <span class="fs-15 color-gray">name</span>
+                                </div>
+                            </div>
+                            <div class="bg-color-two color-gray button-shape fs-13">2mb</div>
+                        </li>
+                        <li class="between-flex pb-10 mb-10">
+                            <div class="d-flex align-center">
+                                <img class="mr-10" src="imgs/file-icon-js.png" alt="">
+                                <div>
+                                    <span class="d-block">file.js</span>
+                                    <span class="fs-15 color-gray">name</span>
+                                </div>
+                            </div>
+                            <div class="bg-color-two color-gray button-shape fs-13">2mb</div>
+                        </li>
+                        <li class="between-flex pb-10 mb-10">
+                            <div class="d-flex align-center">
+                                <img class="mr-10" src="imgs/file-icon-svg.png" alt="">
+                                <div>
+                                    <span class="d-block">file.svg</span>
+                                    <span class="fs-15 color-gray">name</span>
+                                </div>
+                            </div>
+                            <div class="bg-color-two color-gray button-shape fs-13">2mb</div>
+                        </li>
+                        <li class="between-flex pb-10 mb-10">
+                            <div class="d-flex align-center">
+                                <img class="mr-10" src="imgs/file-icon-text.png" alt="">
+                                <div>
+                                    <span class="d-block">file.txt</span>
+                                    <span class="fs-15 color-gray">name</span>
+                                </div>
+                            </div>
+                            <div class="bg-color-two color-gray button-shape fs-13">2mb</div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Latest Uploads Widget End -->
+
+                <!-- Current Project Progress Widget Start -->
+                <div class="current-project p-20  bg-color-one rad position-relative">
+                    <h2 class="mt-0 mb-20">Current Project Progress</h2>
+                    <ul class="m-0 position-relative">
+                        <li class="mt-25 d-flex align-center done">Plan</li>
+                        <li class="mt-25 d-flex align-center done">Design</li>
+                        <li class="mt-25 d-flex align-center done">Implement</li>
+                        <li class="mt-25 d-flex align-center current">Test</li>
+                        <li class="mt-25 d-flex align-center">Deploy</li>
+                        <li class="mt-25 d-flex align-center">Maintain</li>
+                    </ul>
+                    <img class="project-image hide-mobile" src="imgs/overlay-image-1.svg" alt="">
+                </div>
+                <!-- Current Project Progress Widget End -->
+
+                <!-- Reminders Widget Start -->
+                <div class="reminders p-20  bg-color-one rad position-relative">
+                    <h2 class="mt-0 mb-25">Reminders</h2>
+                    <ul>
+                        <li class="d-flex align-center mt-15">
+                            <span class="key bg-color-blue mr-15 d-block rad-50"></span>
+                            <div class="row-one pl-15">
+                                <p class="fs-14 fw-bold mt-0 mb-5">Lorem, ipsum dolor</p>
+                                <span class="fs-13 color-gray">01/01/2024 - 12:00am</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-center mt-15">
+                            <span class="key bg-color-green mr-15 d-block rad-50"></span>
+                            <div class="row-two pl-15">
+                                <p class="fs-14 fw-bold mt-0 mb-5">Lorem, ipsum dolor</p>
+                                <span class="fs-13 color-gray">01/01/2024 - 12:00am</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-center mt-15">
+                            <span class="key bg-color-orange mr-15 d-block rad-50"></span>
+                            <div class="row-three pl-15">
+                                <p class="fs-14 fw-bold mt-0 mb-5">Lorem, ipsum dolor</p>
+                                <span class="fs-13 color-gray">01/01/2024 - 12:00am</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-center mt-15">
+                            <span class="key bg-color-red mr-15 d-block rad-50"></span>
+                            <div class="row-four pl-15">
+                                <p class="fs-14 fw-bold mt-0 mb-5">Lorem, ipsum dolor</p>
+                                <span class="fs-13 color-gray">01/01/2024 - 12:00am</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-center mt-15">
+                            <span class="key bg-color-purple mr-15 d-block rad-50"></span>
+                            <div class="row-five pl-15">
+                                <p class="fs-14 fw-bold mt-0 mb-5">Lorem, ipsum dolor</p>
+                                <span class="fs-13 color-gray">01/01/2024 - 12:00am</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Reminders Widget End -->
+
+                <!-- Latest Post Widget Start -->
+                <div class="latest-post p-20  bg-color-one rad position-relative">
+                    <h2 class="mt-0 mb-25">Latest Post</h2>
+                    <div class="top d-flex align-center">
+                        <a href="https://github.com/hazemhusseinv7"><img class="avatar mr-15 rad" src="imgs/avatar.png"
+                                alt="Profile Picture"></a>
+                        <div class="info">
+                            <span class="d-block mb-5 fw-bold">Hazem Hussein</span>
+                            <span class="color-gray">3 Hours ago</span>
+                        </div>
+                    </div>
+                    <div class="post-content text-c-mobile pt-20 pb-20 mt-20 mb-20">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem adipisci voluptate dolorem
+                        nobis nulla, perferendis non nostrum ratione quas temporibus.
+                    </div>
+                    <div class="post-stats between-flex color-gray ">
+                        <div>
+                            <!-- Alt Icon -->
+                            <!-- <i class="fa-regular fa-heart"></i> -->
+                            <i class="fa-solid fa-heart"></i>
+                            <span>1.8K</span>
+                        </div>
+                        <div>
+                            <!-- Alt Icon -->
+                            <!-- <i class="fa-regular fa-message"></i> -->
+                            <i class="fa-solid fa-message"></i>
+                            <span>1.8K</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Latest Post Widget end -->
+
+                <!-- Social Media Stats Widget Start -->
+                <div class="social-media p-20  bg-color-one rad position-relative">
+                    <h2 class="mt-0 mb-25">Social Media Stats</h2>
+                    <div class="card twitter p-15 position-relative mb-10 between-flex">
+                        <i class="fa-brands fa-twitter fa-2x color-white h-full center-flex"></i>
+                        <span>90K Followers</span>
+                        <a class="fs-13 color-white button-shape bg-color-two" href="#">Follow</a>
+                    </div>
+                    <div class="card facebook p-15 position-relative mb-10 between-flex">
+                        <i class="fa-brands fa-facebook-f fa-2x color-white h-full center-flex"></i>
+                        <span>100K Followers</span>
+                        <a class="fs-13 color-white button-shape bg-color-two" href="#">Like</a>
+                    </div>
+                    <div class="card youtube p-15 position-relative mb-10 between-flex">
+                        <i class="fa-brands fa-youtube fa-2x color-white h-full center-flex"></i>
+                        <span>10K Followers</span>
+                        <a class="fs-13 color-white button-shape bg-color-two" href="#">Subscribe</a>
+                    </div>
+                    <div class="card linkedin p-15 position-relative mb-10 between-flex">
+                        <i class="fa-brands fa-linkedin-in fa-2x color-white h-full center-flex"></i>
+                        <span>20K Followers</span>
+                        <a class="fs-13 color-white button-shape bg-color-two" href="#">Follow</a>
+                    </div>
+                </div>
+                <!-- Social Media Stats Widget End -->
+            </div>
+
+            <!-- Projects Table Start -->
+            <div class="projects-table p-20 bg-color-one rad m-20">
+                <h2 class="mt-0 mb-20">Projects</h2>
+                <div class="responsive-table">
+                    <table class="fs-15 w-full">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Finish Date</th>
+                                <th>Client</th>
+                                <th>Price</th>
+                                <th>Team</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>
+                                    <img src="imgs/team-member-1.png" alt="">
+                                    <img src="imgs/team-member-2.png" alt="">
+                                    <img src="imgs/team-member-3.png" alt="">
+                                </td>
+                                <!-- Design Option -->
+                                <!-- <td class="label bg-color-orange">Pending</td> -->
+                                <td><span class="label button-shape bg-color-orange">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>
+                                    <img src="imgs/team-member-1.png" alt="">
+                                    <img src="imgs/team-member-2.png" alt="">
+                                    <img src="imgs/team-member-3.png" alt="">
+                                </td>
+                                <!-- Design Option -->
+                                <!-- <td class="label bg-color-blue">In Progress</td> -->
+                                <td><span class="label button-shape bg-color-blue">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>
+                                    <img src="imgs/team-member-1.png" alt="">
+                                    <img src="imgs/team-member-2.png" alt="">
+                                    <img src="imgs/team-member-3.png" alt="">
+                                </td>
+                                <!-- Design Option -->
+                                <!-- <td class="label bg-color-green">Completed</td> -->
+                                <td><span class="label button-shape bg-color-green">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>
+                                    <img src="imgs/team-member-1.png" alt="">
+                                    <img src="imgs/team-member-2.png" alt="">
+                                    <img src="imgs/team-member-3.png" alt="">
+                                </td>
+                                <!-- Design Option -->
+                                <!-- <td class="label bg-color-green">Completed</td> -->
+                                <td><span class="label button-shape bg-color-green">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>
+                                    <img src="imgs/team-member-1.png" alt="">
+                                    <img src="imgs/team-member-2.png" alt="">
+                                    <img src="imgs/team-member-3.png" alt="">
+                                </td>
+                                <!-- <td class="label bg-color-red">Rejected</td> -->
+                                <td><span class="label button-shape bg-color-red">Rejected</span></td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>Lorem ipsum</td>
+                                <td>
+                                    <img src="imgs/team-member-1.png" alt="">
+                                    <img src="imgs/team-member-2.png" alt="">
+                                    <img src="imgs/team-member-3.png" alt="">
+                                </td>
+                                <!-- Design Option -->
+                                <!-- <td class="label bg-color-green">Completed</td> -->
+                                <td><span class="label button-shape bg-color-green">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Projects Table End -->
+        </div>
+    </div>
+</body>
+
+</html>
